@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="11219" started-at="2021-01-19T03:16:10Z" finished-at="2021-01-19T03:16:21Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="11219" started-at="2021-01-19T03:16:10Z" finished-at="2021-01-19T03:16:21Z">
+      <class name="com.qa.wildcart.test.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.wildcart.test.LoginPageTest@3546d80f]" name="setup" is-config="true" duration-ms="9036" started-at="2021-01-19T03:16:10Z" finished-at="2021-01-19T03:16:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.wildcart.test.LoginPageTest@3546d80f]" name="verifySignUpLinkTest" duration-ms="592" started-at="2021-01-19T03:16:19Z" finished-at="2021-01-19T03:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLinkTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.wildcart.test.LoginPageTest@3546d80f]" name="closeBrowser" is-config="true" duration-ms="1324" started-at="2021-01-19T03:16:20Z" finished-at="2021-01-19T03:16:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.wildcart.test.LoginPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

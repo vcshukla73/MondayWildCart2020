@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CRMPRO Test automtion regression suite">
+
+	<test name="CRMPRO Login Test - Chrome">
+
+		<classes>
+			<class name="com.mytest.LoginPageTest" />
+		</classes>
+
+	</test>
+
+	<test name="CRMPRO Home Test - Chrome">
+
+		<classes>
+			<class name="com.mytest.HomePageTest" />
+		</classes>
+
+	</test>
+
+
+
+</suite>

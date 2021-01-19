@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Wild Cart automtion sanity suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <listeners>
+    <listener class-name="com.qa.wildcart.testlisteners.TesultsListener"/>
+  </listeners>
+  <test thread-count="3" name="Wild Cart Login Testing -(failed)" verbose="2">
+    <classes>
+      <class name="com.qa.wildcart.test.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifySignUpLinkTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.wildcart.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Wild Cart Login Testing -(failed) -->
+</suite> <!-- Failed suite [Wild Cart automtion sanity suite] -->
