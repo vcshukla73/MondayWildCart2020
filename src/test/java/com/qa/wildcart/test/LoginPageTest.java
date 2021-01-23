@@ -29,7 +29,7 @@ public class LoginPageTest extends BaseTest {
 	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 1)
 	public void verifySignUpLinkTest() {
-
+		System.out.println("running login page");
 		Assert.assertEquals(loginpage.isSignUpButtonExists(), true);
 
 	}
