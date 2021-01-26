@@ -4,12 +4,12 @@
 <suite name="Wild Cart automtion sanity suite" thread-count="3"
 	verbose="2">
 	
-	  <listeners>  
+	 <!--  <listeners>  
 		 <listener class-name="com.qa.wildcart.testlisteners.ExtentReportListener" />  
-		 <!-- <listener class-name="com.qa.wildcart.testlisteners.pdfListener" /> -->
+		 <listener class-name="com.qa.wildcart.testlisteners.pdfListener" /> 
 		  <listener class-name="com.qa.wildcart.testlisteners.TestAllureListener" /> 
 		  <listener class-name="com.qa.wildcart.testlisteners.TesultsListener" />    
-	</listeners>  
+	</listeners> -->  
  	<test name="Wild Cart Login Testing -">
 		<classes>
 			<class name="com.qa.wildcart.test.LoginPageTest" />
