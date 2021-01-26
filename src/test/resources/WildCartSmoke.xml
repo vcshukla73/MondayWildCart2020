@@ -6,7 +6,7 @@
 	
 	  <listeners>  
 		 <listener class-name="com.qa.wildcart.testlisteners.ExtentReportListener" />  
-		 <listener class-name="com.qa.wildcart.testlisteners.pdfListener" />
+		 <!-- <listener class-name="com.qa.wildcart.testlisteners.pdfListener" /> -->
 		  <listener class-name="com.qa.wildcart.testlisteners.TestAllureListener" /> 
 		  <listener class-name="com.qa.wildcart.testlisteners.TesultsListener" />    
 	</listeners>  
