@@ -30,15 +30,17 @@ public class BaseTest {
 	     
 	    @Parameters("browser")
 		@BeforeTest
-		//public void setUp(String browserName) {
-		public void setup() {
+		public void setUp(String browserName) {
+		//public void setup() {
 			basepage=new BasePage();
 			prop=basepage.init_prop();
-			String brw=prop.getProperty("browser");
+			prop.setProperty("browser",browserName);
+
+			//String brw=prop.getProperty("browser");
 //			if (browserName != null) {
 //				brw = browserName;
 //			}
-			driver=basepage.initl_driver(brw);
+			driver=basepage.initl_driver(prop);
 			loginpage=new LoginPage(driver);
 			driver.get(prop.getProperty("url"));
 

@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="11219" started-at="2021-01-19T03:16:10Z" finished-at="2021-01-19T03:16:21Z">
+  <suite name="Wild Cart automtion sanity suite" duration-ms="41060" started-at="2021-01-29T04:09:12Z" finished-at="2021-01-29T04:09:53Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="11219" started-at="2021-01-19T03:16:10Z" finished-at="2021-01-19T03:16:21Z">
+    <test name="Wild Cart Login Testing -" duration-ms="31502" started-at="2021-01-29T04:09:12Z" finished-at="2021-01-29T04:09:44Z">
       <class name="com.qa.wildcart.test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.wildcart.test.LoginPageTest@3546d80f]" name="setup" is-config="true" duration-ms="9036" started-at="2021-01-19T03:16:10Z" finished-at="2021-01-19T03:16:19Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.wildcart.test.LoginPageTest@2e1792e7]" name="setUp" is-config="true" duration-ms="19454" started-at="2021-01-29T04:09:12Z" finished-at="2021-01-29T04:09:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.wildcart.test.LoginPageTest@3546d80f]" name="verifySignUpLinkTest" duration-ms="592" started-at="2021-01-19T03:16:19Z" finished-at="2021-01-19T03:16:20Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySignUpLinkTest()[pri:1, instance:com.qa.wildcart.test.LoginPageTest@2e1792e7]" name="verifySignUpLinkTest" duration-ms="4144" started-at="2021-01-29T04:09:32Z" finished-at="2021-01-29T04:09:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignUpLinkTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.wildcart.test.LoginPageTest@3546d80f]" name="closeBrowser" is-config="true" duration-ms="1324" started-at="2021-01-19T03:16:20Z" finished-at="2021-01-19T03:16:21Z">
+        <test-method status="PASS" signature="verifyPageTitle()[pri:2, instance:com.qa.wildcart.test.LoginPageTest@2e1792e7]" name="verifyPageTitle" duration-ms="107" started-at="2021-01-29T04:09:36Z" finished-at="2021-01-29T04:09:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.qa.wildcart.test.LoginPageTest@2e1792e7]" name="loginTest" duration-ms="7334" started-at="2021-01-29T04:09:36Z" finished-at="2021-01-29T04:09:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.wildcart.test.LoginPageTest@2e1792e7]" name="closeBrowser" is-config="true" duration-ms="190" started-at="2021-01-29T04:09:44Z" finished-at="2021-01-29T04:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.qa.wildcart.test.LoginPageTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Wild Cart Login Testing - -->
+    <test name="Wild Cart homepage Testing" duration-ms="41060" started-at="2021-01-29T04:09:12Z" finished-at="2021-01-29T04:09:53Z">
+      <class name="com.qa.wildcart.test.HomePageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.wildcart.test.HomePageTest@61533ae]" name="setUp" is-config="true" duration-ms="32833" started-at="2021-01-29T04:09:12Z" finished-at="2021-01-29T04:09:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="homepagesetup()[pri:0, instance:com.qa.wildcart.test.HomePageTest@61533ae]" name="homepagesetup" is-config="true" duration-ms="5170" started-at="2021-01-29T04:09:45Z" finished-at="2021-01-29T04:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepagesetup -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.qa.wildcart.test.HomePageTest@61533ae]" name="verifyHomePageTitle" duration-ms="57" started-at="2021-01-29T04:09:50Z" finished-at="2021-01-29T04:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="verifyLoggedUserTest()[pri:2, instance:com.qa.wildcart.test.HomePageTest@61533ae]" name="verifyLoggedUserTest" duration-ms="990" started-at="2021-01-29T04:09:50Z" finished-at="2021-01-29T04:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedUserTest -->
+        <test-method status="PASS" signature="verifyProdListCount()[pri:3, instance:com.qa.wildcart.test.HomePageTest@61533ae]" name="verifyProdListCount" duration-ms="47" started-at="2021-01-29T04:09:51Z" finished-at="2021-01-29T04:09:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProdListCount -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.wildcart.test.HomePageTest@61533ae]" name="closeBrowser" is-config="true" duration-ms="1928" started-at="2021-01-29T04:09:52Z" finished-at="2021-01-29T04:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.wildcart.test.HomePageTest -->
+    </test> <!-- Wild Cart homepage Testing -->
+  </suite> <!-- Wild Cart automtion sanity suite -->
 </testng-results>

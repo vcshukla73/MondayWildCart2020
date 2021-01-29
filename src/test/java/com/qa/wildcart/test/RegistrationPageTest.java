@@ -1,5 +1,7 @@
 package com.qa.wildcart.test;
 
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -16,13 +18,19 @@ public class RegistrationPageTest extends BasePage {
 	WebDriver driver;
     BasePage basepage;
     LoginPage loginpage;
+    public Properties prop;
+
     RegistrationPage registraionpage;
 
 	
 	@BeforeTest
 	public void setup() {
 		basepage=new BasePage();
-		driver=basepage.initl_driver("chrome");
+		prop=basepage.init_prop();
+
+		//driver=basepage.initl_driver("chrome");
+		driver=basepage.initl_driver(prop);
+
 		loginpage=new LoginPage(driver);
 		registraionpage=loginpage.dosignup();
 		
