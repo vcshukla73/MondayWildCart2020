@@ -94,6 +94,7 @@ public class BasePage {
 		prop = new Properties();
 
 		try {
+			//C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart\src\main\java\com\qa\wildcart\properties\config.properties
 			// C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart\src\main\java\com\qa\wildcart\properties
 			FileInputStream ip = new FileInputStream(
 					"C:\\Users\\vaibhav\\eclipse-workspace\\MondayPOM2020WildCart\\src\\main\\java\\com\\qa\\wildcart\\properties\\config.properties");

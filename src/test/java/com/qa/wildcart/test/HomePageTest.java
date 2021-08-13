@@ -28,7 +28,7 @@ public class HomePageTest extends BaseTest {
 	@Test(priority=3)
 	public void verifyProdListCount() {
 		int count=homepage.getSectionCount();
-		Assert.assertEquals(count,8);
+		Assert.assertEquals(count,7);
 		
 	}
 //	@Test(priority=4)

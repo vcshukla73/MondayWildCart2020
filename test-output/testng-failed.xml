@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Wild Cart automtion sanity suite]" guice-stage="DEVELOPMENT" verbose="2">
-  <listeners>
-    <listener class-name="com.qa.wildcart.testlisteners.ExtentReportListener"/>
-    <listener class-name="com.qa.wildcart.testlisteners.TestAllureListener"/>
-    <listener class-name="com.qa.wildcart.testlisteners.TesultsListener"/>
-  </listeners>
-  <test thread-count="3" parallel="tests" name="Wild Cart homepage Testing(failed)" verbose="2">
-    <parameter name="browser" value="firefox"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.wildcart.test.HomePageTest">
+      <class name="com.qa.wildcart.test.RegisterPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="homepagesetup"/>
+          <include name="signUpSetup"/>
+          <include name="userRegisterationTest" invocation-numbers="1 2"/>
+          <include name="setup"/>
           <include name="closeBrowser"/>
-          <include name="verifyLoggedUserTest"/>
         </methods>
-      </class> <!-- com.qa.wildcart.test.HomePageTest -->
+      </class> <!-- com.qa.wildcart.test.RegisterPageTest -->
     </classes>
-  </test> <!-- Wild Cart homepage Testing(failed) -->
-</suite> <!-- Failed suite [Wild Cart automtion sanity suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

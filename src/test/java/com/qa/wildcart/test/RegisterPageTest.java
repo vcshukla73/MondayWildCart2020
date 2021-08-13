@@ -26,8 +26,8 @@ public class RegisterPageTest extends BaseTest {
 	
 	@Test(dataProvider="getRegisterData")
 	public void userRegisterationTest(String email,String username,String password,String confpassword
-			,String firstname,String lastname,String address)  {
-		registerpage.accountRegistration(email,username,password, confpassword,firstname,lastname,address);
+			,String firstname,String lastname)  {
+		registerpage.accountRegistration(email,username,password, confpassword,firstname,lastname);
 	}	
 	
 	

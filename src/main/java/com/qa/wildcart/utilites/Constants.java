@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Constants {
 	
-	public static final String LOGIN_PAGE_TITLE="WildFire Cart";
+	public static final String LOGIN_PAGE_TITLE="Online Shopping";
 	public static final String REGISTER_SHEET_NAME = "registration";
 	public static List<String> getSectionIteamsList(){
 		List<String> accountList=new ArrayList<String>();

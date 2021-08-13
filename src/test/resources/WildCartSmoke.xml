@@ -4,25 +4,25 @@
 <suite name="Wild Cart automtion sanity suite" thread-count="3"
 	verbose="2" parallel="tests">
 	
-	   <listeners>  
+	    <listeners>  
 		 <listener class-name="com.qa.wildcart.testlisteners.ExtentReportListener" />  
-		 <!-- <listener class-name="com.qa.wildcart.testlisteners.pdfListener" /> --> 
-		  <listener class-name="com.qa.wildcart.testlisteners.TestAllureListener" /> 
+		  <listener class-name="com.qa.wildcart.testlisteners.pdfListener" /> 
+		<!--  <listener class-name="com.qa.wildcart.testlisteners.TestAllureListener" /> --> 
 		  <listener class-name="com.qa.wildcart.testlisteners.TesultsListener" />    
 	</listeners>   
- 	<test name="Wild Cart Login Testing -">
+ 	 <test name="Wild Cart Login Testing -">
  	    <parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.qa.wildcart.test.LoginPageTest" />
 			
 		</classes>
-	</test> 
+	</test>  
 
-	 <test name="Wild Cart homepage Testing">
+	  <test name="Wild Cart homepage Testing">
 	 <parameter name="browser" value="firefox"/>
 		<classes>
 			<class name="com.qa.wildcart.test.HomePageTest" />
 		</classes>
-	</test>
+	</test> 
 
 </suite>

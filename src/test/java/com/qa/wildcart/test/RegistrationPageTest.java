@@ -42,7 +42,7 @@ public class RegistrationPageTest extends BasePage {
 	
 	@Test
 	public void userRegistrationTest() {
-		registraionpage.accountRegistration("vcshukl55@gmail.com", "Raj1","ptw123","ptw123","Rajesh11","Patel","Nhp");
+		registraionpage.accountRegistration("vcshukl55@gmail.com", "Raj1","ptw123","ptw123","Rajesh11","Patel");
 		
 	}
 	

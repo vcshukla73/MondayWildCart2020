@@ -18,6 +18,7 @@ public class BaseTest {
 		//preconditions .... testcase(step) .... assertion.....close test
 		//@Beforetest......@Test.....Assertions.....close the browser
 		//launch browser..,url,...title....verify....close the browser
+	//http://192.168.99.100:4444/wd/hub
 	     public WebDriver driver;
 	     public BasePage basepage;
 	     public LoginPage loginpage;
@@ -28,13 +29,14 @@ public class BaseTest {
 		
 	     
 	     
-	    @Parameters("browser")
+	   // @Parameters("browser")
 		@BeforeTest
-		public void setUp(String browserName) {
-		//public void setup() {
+	//	public void setUp(String browserName) {
+		public void setup() {  //sanity
 			basepage=new BasePage();
 			prop=basepage.init_prop();
-			prop.setProperty("browser",browserName);
+		//	prop.setProperty("browser",browserName);
+			prop.getProperty("browser");   //sanity
 
 			//String brw=prop.getProperty("browser");
 //			if (browserName != null) {

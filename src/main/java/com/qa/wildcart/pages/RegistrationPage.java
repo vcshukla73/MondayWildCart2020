@@ -35,7 +35,7 @@ public class RegistrationPage extends BasePage {
 	}
 	
 	public boolean accountRegistration(String email,String username ,String password,String confPassword 
-			,String firstname, String lastname, String address){
+			,String firstname, String lastname){
 		
 		
 		driver.findElement(emailField).sendKeys(email);
@@ -44,7 +44,7 @@ public class RegistrationPage extends BasePage {
 		driver.findElement(regConfPasswordField).sendKeys(confPassword);
 		driver.findElement(firstNameField).sendKeys(firstname);
 		driver.findElement(lastNameField).sendKeys(lastname);
-		driver.findElement(addressField).sendKeys(address);
+		//driver.findElement(addressField).sendKeys(address);
 		
 		driver.findElement(createAcctButton).click();
 		
