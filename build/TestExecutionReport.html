@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 10, 2021 11:10:26 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 13, 2021 09:48:35 PM</span>
 				</a>
 			</li>
 			<li>
@@ -87,7 +87,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>WildCartautomtionsanitysuite</a></li>
+					<li><a href='#'>WildCartautomtionregressionsuite</a></li>
 					<li><a href='#'>LoginPageTest</a></li>
 					<li><a href='#'>HomePageTest</a></li>
 					<li class='divider'></li>
@@ -137,10 +137,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>4</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -152,10 +152,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>4</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -170,21 +170,21 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verifySignUpLinkTest</span>
-						<span class='test-time'>Aug 10, 2021 11:10:32 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Aug 13, 2021 09:48:46 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2021 11:10:32 PM</span>
-	<span class='label end-time'>Aug 10, 2021 11:10:33 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+545ms</span>
+	<span class='label start-time'>Aug 13, 2021 09:48:46 PM</span>
+	<span class='label end-time'>Aug 13, 2021 09:48:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+192ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WildCartautomtionsanitysuite</span>
+				<span class='category label white-text'>WildCartautomtionregressionsuite</span>
 				<span class='category label white-text'>LoginPageTest</span>
 			</div>
 	</div>
@@ -198,10 +198,43 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:10:33 PM</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:48:58 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.qa.wildcart.test.LoginPageTest.verifySignUpLinkTest(LoginPageTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre><img data-featherlight='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628905738250.png' width='10%' src='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628905738250.png' data-src='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628905738250.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -213,18 +246,18 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyPageTitle</span>
-						<span class='test-time'>Aug 10, 2021 11:10:33 PM</span>
+						<span class='test-time'>Aug 13, 2021 09:48:59 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2021 11:10:33 PM</span>
-	<span class='label end-time'>Aug 10, 2021 11:10:33 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+21ms</span>
+	<span class='label start-time'>Aug 13, 2021 09:48:59 PM</span>
+	<span class='label end-time'>Aug 13, 2021 09:48:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+17ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WildCartautomtionsanitysuite</span>
+				<span class='category label white-text'>WildCartautomtionregressionsuite</span>
 				<span class='category label white-text'>LoginPageTest</span>
 			</div>
 	</div>
@@ -240,7 +273,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:10:33 PM</td>
+					<td class='timestamp'>9:48:59 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -253,18 +286,18 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>loginTest</span>
-						<span class='test-time'>Aug 10, 2021 11:10:33 PM</span>
+						<span class='test-time'>Aug 13, 2021 09:48:59 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2021 11:10:33 PM</span>
-	<span class='label end-time'>Aug 10, 2021 11:10:34 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+235ms</span>
+	<span class='label start-time'>Aug 13, 2021 09:48:59 PM</span>
+	<span class='label end-time'>Aug 13, 2021 09:49:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+41ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WildCartautomtionsanitysuite</span>
+				<span class='category label white-text'>WildCartautomtionregressionsuite</span>
 				<span class='category label white-text'>LoginPageTest</span>
 			</div>
 	</div>
@@ -280,7 +313,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:10:34 PM</td>
+					<td class='timestamp'>9:49:01 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -293,18 +326,18 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyHomePageTitle</span>
-						<span class='test-time'>Aug 10, 2021 11:10:38 PM</span>
+						<span class='test-time'>Aug 13, 2021 09:49:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2021 11:10:38 PM</span>
-	<span class='label end-time'>Aug 10, 2021 11:10:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+17ms</span>
+	<span class='label start-time'>Aug 13, 2021 09:49:25 PM</span>
+	<span class='label end-time'>Aug 13, 2021 09:49:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+11ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WildCartautomtionsanitysuite</span>
+				<span class='category label white-text'>WildCartautomtionregressionsuite</span>
 				<span class='category label white-text'>HomePageTest</span>
 			</div>
 	</div>
@@ -320,7 +353,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:10:38 PM</td>
+					<td class='timestamp'>9:49:25 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -333,18 +366,18 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyLoggedUserTest</span>
-						<span class='test-time'>Aug 10, 2021 11:10:38 PM</span>
+						<span class='test-time'>Aug 13, 2021 09:49:25 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2021 11:10:38 PM</span>
-	<span class='label end-time'>Aug 10, 2021 11:10:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+358ms</span>
+	<span class='label start-time'>Aug 13, 2021 09:49:25 PM</span>
+	<span class='label end-time'>Aug 13, 2021 09:49:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+340ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WildCartautomtionsanitysuite</span>
+				<span class='category label white-text'>WildCartautomtionregressionsuite</span>
 				<span class='category label white-text'>HomePageTest</span>
 			</div>
 	</div>
@@ -360,7 +393,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:10:39 PM</td>
+					<td class='timestamp'>9:49:25 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -373,18 +406,18 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>verifyProdListCount</span>
-						<span class='test-time'>Aug 10, 2021 11:10:39 PM</span>
+						<span class='test-time'>Aug 13, 2021 09:49:25 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2021 11:10:39 PM</span>
-	<span class='label end-time'>Aug 10, 2021 11:10:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+21ms</span>
+	<span class='label start-time'>Aug 13, 2021 09:49:25 PM</span>
+	<span class='label end-time'>Aug 13, 2021 09:49:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+29ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>WildCartautomtionsanitysuite</span>
+				<span class='category label white-text'>WildCartautomtionregressionsuite</span>
 				<span class='category label white-text'>HomePageTest</span>
 			</div>
 	</div>
@@ -400,8 +433,8 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:10:40 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: expected [8] but found [7]
+					<td class='timestamp'>9:49:26 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [9] but found [7]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -422,14 +455,19 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-</pre><img data-featherlight='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628651440197.png' width='10%' src='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628651440197.png' data-src='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628651440197.png'></td>
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre><img data-featherlight='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628905766528.png' width='10%' src='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628905766528.png' data-src='C:\Users\vaibhav\eclipse-workspace\MondayPOM2020WildCart/screenshots/1628905766528.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -488,15 +526,75 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>WildCartautomtionsanitysuite</span>
+						<span class='category-name'>WildCartautomtionregressionsuite</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label pass'>4</span>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 13, 2021 09:48:46 PM</td>
+										<td class='linked' test-id='1'>verifySignUpLinkTest</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 13, 2021 09:48:59 PM</td>
+										<td class='linked' test-id='2'>verifyPageTitle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 13, 2021 09:48:59 PM</td>
+										<td class='linked' test-id='3'>loginTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 13, 2021 09:49:25 PM</td>
+										<td class='linked' test-id='4'>verifyHomePageTitle</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 13, 2021 09:49:25 PM</td>
+										<td class='linked' test-id='5'>verifyLoggedUserTest</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Aug 13, 2021 09:49:25 PM</td>
+										<td class='linked' test-id='6'>verifyProdListCount</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>LoginPageTest</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
 							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
 							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
@@ -512,76 +610,17 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 10, 2021 11:10:32 PM</td>
+										<td>Aug 13, 2021 09:48:46 PM</td>
 										<td class='linked' test-id='1'>verifySignUpLinkTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 10, 2021 11:10:33 PM</td>
-										<td class='linked' test-id='2'>verifyPageTitle</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 10, 2021 11:10:33 PM</td>
-										<td class='linked' test-id='3'>loginTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 10, 2021 11:10:38 PM</td>
-										<td class='linked' test-id='4'>verifyHomePageTitle</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 10, 2021 11:10:38 PM</td>
-										<td class='linked' test-id='5'>verifyLoggedUserTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 10, 2021 11:10:39 PM</td>
-										<td class='linked' test-id='6'>verifyProdListCount</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>LoginPageTest</span>
-						<span class='category-status right'>
-							<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 10, 2021 11:10:32 PM</td>
-										<td class='linked' test-id='1'>verifySignUpLinkTest</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Aug 10, 2021 11:10:33 PM</td>
+										<td>Aug 13, 2021 09:48:59 PM</td>
 										<td class='linked' test-id='2'>verifyPageTitle</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 10, 2021 11:10:33 PM</td>
+										<td>Aug 13, 2021 09:48:59 PM</td>
 										<td class='linked' test-id='3'>loginTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -616,17 +655,17 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 10, 2021 11:10:38 PM</td>
+										<td>Aug 13, 2021 09:49:25 PM</td>
 										<td class='linked' test-id='4'>verifyHomePageTitle</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 10, 2021 11:10:38 PM</td>
+										<td>Aug 13, 2021 09:49:25 PM</td>
 										<td class='linked' test-id='5'>verifyLoggedUserTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Aug 10, 2021 11:10:39 PM</td>
+										<td>Aug 13, 2021 09:49:25 PM</td>
 										<td class='linked' test-id='6'>verifyProdListCount</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -675,7 +714,7 @@
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -689,9 +728,47 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 10, 2021 11:10:39 PM</td>
+                                                        <td>Aug 13, 2021 09:48:46 PM</td>
+                                                        <td class='linked' test-id='1'>verifySignUpLinkTest</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.qa.wildcart.test.LoginPageTest.verifySignUpLinkTest(LoginPageTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aug 13, 2021 09:49:25 PM</td>
                                                         <td class='linked' test-id='6'>verifyProdListCount</td>
-                                                        <td><pre><pre>java.lang.AssertionError: expected [8] but found [7]
+                                                        <td><pre><pre>java.lang.AssertionError: expected [9] but found [7]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -712,13 +789,18 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -757,19 +839,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 10, 2021 11:10:26 PM</div>
+					<div class='panel-lead'>Aug 13, 2021 09:48:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 10, 2021 11:10:45 PM</div>
+			 		<div class='panel-lead'>Aug 13, 2021 09:49:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 18s+941ms</div>
+					<div class='panel-lead'>0h 0m 52s+767ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -785,21 +867,21 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>WildCartautomtionsanitysuite</td>
-							<td>5</td>
-							<td>1</td>
+							<td>WildCartautomtionregressionsuite</td>
+							<td>4</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									83.333%
+									66.667%
 							</td>
 						</tr>
 						<tr>
 							<td>LoginPageTest</td>
-							<td>3</td>
-							<td>0</td>
+							<td>2</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									66.667%
 							</td>
 						</tr>
 						<tr>
@@ -824,22 +906,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
-				failParent: 1,
+				passParent: 4,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 5,
-				failChild: 1,
+				passChild: 4,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

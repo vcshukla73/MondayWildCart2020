@@ -29,7 +29,7 @@ public class BaseTest {
 		
 	     
 	     
-	   // @Parameters("browser")
+	   @Parameters("browser")
 		@BeforeTest
 	//	public void setUp(String browserName) {
 		public void setup() {  //sanity

@@ -20,7 +20,7 @@ public class LoginPage extends BasePage {
 	By userName=By.id("username");
 	By passWord=By.id("password");
 	By loginButton=By.id("jqLogin");
-	By signUp=By.id("jqSignup");
+	By signUp=By.id("jqSignup1");
 	
 	//constructor of the page class
 	

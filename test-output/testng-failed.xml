@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.wildcart.test.RegisterPageTest">
+      <class name="com.qa.wildcart.test.LoginPageTest">
         <methods>
-          <include name="signUpSetup"/>
-          <include name="userRegisterationTest" invocation-numbers="1 2"/>
           <include name="setup"/>
+          <include name="verifyPageTitle"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.qa.wildcart.test.RegisterPageTest -->
+      </class> <!-- com.qa.wildcart.test.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
