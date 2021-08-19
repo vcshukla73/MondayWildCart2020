@@ -14,7 +14,7 @@ public class HomePage {
 	private WebDriver driver;
 	private ElementUtil elementutil;
 	
-	
+	//this is locator
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		elementutil=new ElementUtil(this.driver);
