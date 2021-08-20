@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" class="navigator-link">
-              <span class="suite-name border-passed">Wild Cart automtion regression suite</span>
+              <span class="suite-name border-failed">Wild Cart automtion regression suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" class="hide-methods failed suite-Wild_Cart_automtion_regression_suite"> (hide)</a> <!-- hide-methods failed suite-Wild_Cart_automtion_regression_suite -->
+                      <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" class="show-methods failed suite-Wild_Cart_automtion_regression_suite"> (show)</a> <!-- show-methods failed suite-Wild_Cart_automtion_regression_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Wild_Cart_automtion_regression_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" title="com.qa.wildcart.test.HomePageTest" class="method navigator-link" hash-for-method="verifyProdListCount">verifyProdListCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" title="com.qa.wildcart.test.LoginPageTest" class="method navigator-link" hash-for-method="verifySignUpLinkTest">verifySignUpLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Wild_Cart_automtion_regression_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,16 +139,6 @@
                         <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" title="com.qa.wildcart.test.LoginPageTest" class="method navigator-link" hash-for-method="verifyPageTitle">verifyPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" title="com.qa.wildcart.test.HomePageTest" class="method navigator-link" hash-for-method="verifyProdListCount">verifyProdListCount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Wild_Cart_automtion_regression_suite" title="com.qa.wildcart.test.LoginPageTest" class="method navigator-link" hash-for-method="verifySignUpLinkTest">verifySignUpLinkTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Wild_Cart_automtion_regression_suite -->
                   </li>
                 </ul>
@@ -142,35 +151,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Wild_Cart_automtion_regression_suite" class="panel Wild_Cart_automtion_regression_suite">
-          <div class="suite-Wild_Cart_automtion_regression_suite-class-passed">
+          <div class="suite-Wild_Cart_automtion_regression_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.wildcart.test.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProdListCount">
+                  </a> <!-- verifyProdListCount -->
+                  <span class="method-name">verifyProdListCount</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [9] but found [7]
+	at com.qa.wildcart.test.HomePageTest.verifyProdListCount(HomePageTest.java:31)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wild_Cart_automtion_regression_suite-class-failed -->
+          <div class="suite-Wild_Cart_automtion_regression_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.qa.wildcart.test.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPageTitle">
-                  </a> <!-- verifyPageTitle -->
-                  <span class="method-name">verifyPageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifySignUpLinkTest">
                   </a> <!-- verifySignUpLinkTest -->
                   <span class="method-name">verifySignUpLinkTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qa.wildcart.test.LoginPageTest.verifySignUpLinkTest(LoginPageTest.java:35)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Wild_Cart_automtion_regression_suite-class-passed -->
+          </div> <!-- suite-Wild_Cart_automtion_regression_suite-class-failed -->
           <div class="suite-Wild_Cart_automtion_regression_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -191,11 +209,26 @@
                   <span class="method-name">verifyLoggedUserTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Wild_Cart_automtion_regression_suite-class-passed -->
+          <div class="suite-Wild_Cart_automtion_regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.wildcart.test.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyProdListCount">
-                  </a> <!-- verifyProdListCount -->
-                  <span class="method-name">verifyProdListCount</span>
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitle">
+                  </a> <!-- verifyPageTitle -->
+                  <span class="method-name">verifyPageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,6 +243,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Wild Cart automtion regression suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.wildcart.testlisteners.TesultsListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Wild Cart Login Testing -&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.wildcart.test.LoginPageTest&quot;/&gt;
@@ -262,34 +298,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'verifySignUpLinkTest')
 data.setCell(0, 2, 'com.qa.wildcart.test.LoginPageTest')
-data.setCell(0, 3, 2146);
+data.setCell(0, 3, 10661);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySignUpLinkTest')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.wildcart.test.LoginPageTest')
-data.setCell(1, 3, 572);
+data.setCell(1, 3, 2038);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoggedUserTest')
 data.setCell(2, 2, 'com.qa.wildcart.test.HomePageTest')
-data.setCell(2, 3, 305);
+data.setCell(2, 3, 330);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyProdListCount')
 data.setCell(3, 2, 'com.qa.wildcart.test.HomePageTest')
-data.setCell(3, 3, 21);
+data.setCell(3, 3, 28);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyHomePageTitle')
-data.setCell(4, 2, 'com.qa.wildcart.test.HomePageTest')
-data.setCell(4, 3, 18);
+data.setCell(4, 1, 'verifyPageTitle')
+data.setCell(4, 2, 'com.qa.wildcart.test.LoginPageTest')
+data.setCell(4, 3, 15);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyPageTitle')
-data.setCell(5, 2, 'com.qa.wildcart.test.LoginPageTest')
-data.setCell(5, 3, 17);
+data.setCell(5, 1, 'verifyHomePageTitle')
+data.setCell(5, 2, 'com.qa.wildcart.test.HomePageTest')
+data.setCell(5, 3, 9);
 window.suiteTableData['Wild_Cart_automtion_regression_suite']= { tableData: data, tableDiv: 'times-div-Wild_Cart_automtion_regression_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Wild_Cart_automtion_regression_suite">
               </div> <!-- times-div-Wild_Cart_automtion_regression_suite -->
             </div> <!-- times-div -->
@@ -321,47 +357,51 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifySignUpLinkTest</span>
-                <span class="method-start">7970 ms</span>
+                <span class="method-start">7515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPageTitle</span>
-                <span class="method-start">8716 ms</span>
+                <span class="method-start">19444 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">8739 ms</span>
+                <span class="method-start">19464 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">10891 ms</span>
+                <span class="method-start">21506 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.wildcart.test.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">12002 ms</span>
+                <span class="method-start">26669 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">homepagesetup</span>
-                <span class="method-start">17477 ms</span>
+                <span class="method-start">32356 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitle</span>
-                <span class="method-start">19879 ms</span>
+                <span class="method-start">44903 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoggedUserTest</span>
-                <span class="method-start">19900 ms</span>
+                <span class="method-start">44915 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyProdListCount</span>
-                <span class="method-start">20207 ms</span>
+                <span class="method-start">45248 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">20231 ms</span>
+                <span class="method-start">45854 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

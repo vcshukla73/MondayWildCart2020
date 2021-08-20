@@ -29,6 +29,7 @@ public class HomePage {
 		return elementutil.doGetPageTitleWithContains(10, Constants.LOGIN_PAGE_TITLE);
 	}
 	
+	// this is my verify user account method
 	public String getLoggedAccountName() {
 		elementutil.waitForElementPresent(username, 10);
 		return elementutil.doGetText(username);

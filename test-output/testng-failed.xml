@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Wild Cart automtion regression suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.wildcart.testlisteners.TesultsListener"/>
+  </listeners>
   <test thread-count="5" name="Wild Cart Login Testing -(failed)">
     <classes>
       <class name="com.qa.wildcart.test.LoginPageTest">

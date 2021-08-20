@@ -88,6 +88,8 @@ public class TesultsListener extends BasePage implements ITestListener {
 	public void onFinish(ITestContext iTestContext) {
 		// Map<String, Object> to hold your test results data.
 		Map<String, Object> data = new HashMap<String, Object>();
+		//don't forget to change token
+		//eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImIzZTlhOTY3LWQ4MGEtNDM5Mi04ZjUwLWU3Y2FiNWVjZWNhMS0xNjI5NDIxNzYwNTAwIiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiNWE1ZjU1MjAtYjM4Zi00NzU0LTg4YjItNDk1N2I2MzZmNDQ2IiwidHlwZSI6InQifQ.88_r7Zyt_IegAaMlFPIMIPA5ZkoOvFu9Y0Dj--RdhwM
 		data.put("target","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6ImM1ZGVkZWJkLTRjZjQtNDNhOC1iZjM0LWE0NDJmODRiMWE4Zi0xNjEwOTA3MTU1MjE5IiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiNmMyNzg3MjYtNTIxMS00OGU2LWI1ODAtOTlmZTljNWM5ZmU3IiwidHlwZSI6InQifQ.nSjVPj4aBNgqeeLDm6DFMWXhFA_LRy3-CQGbRmPdjIo");
 
 		Map<String, Object> results = new HashMap<String, Object>();
